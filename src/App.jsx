@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 const App = () => {
+  const pictures = ["pic1.jpeg"];
+  const [picture, setPicture] = useState(0);
+
   return (
     <div className="">
       <center className="mt-2">
@@ -7,13 +12,31 @@ const App = () => {
         </p>
       </center>
       <div className="grid grid-cols-1 xl:grid-cols-5 max-w-7xl mx-auto p-4 mt-4 gap-x-4 gap-y-4">
-        <div className="col-span-2 border-[2px] rounded-lg flex items-center justify-center bg-blue-700">
+        <div className="col-span-2 border-[2px] rounded-lg flex items-center justify-center bg-blue-700 relative">
+          <button
+            disabled={picture === 0}
+            onClick={() => {
+              setPicture(picture - 1);
+            }}
+            className="picture-buttons left-[68px]"
+          >
+            {"<"}
+          </button>
           <img
             className="h-[500px] py-6"
             style={{ borderRadius: "25%" }}
-            src="/pic1.jpeg"
+            src={`/${pictures[picture]}`}
             alt="Mohir_Sir"
           />
+          <button
+            disabled={pictures.length === picture + 1}
+            onClick={() => {
+              setPicture(picture + 1);
+            }}
+            className="picture-buttons right-[68px]"
+          >
+            {">"}
+          </button>
         </div>
         <div className="col-span-3 border-[2px] rounded-lg p-6 text-color font-semibold text-xl space-y-4 text-justify bg-blue-700">
           <p className="">Hello Sir,</p>
