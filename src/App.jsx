@@ -37,7 +37,7 @@ const App = () => {
             touch and let us know how you are doing.
           </p>
           <p className="">I will miss you the most Sir!!</p>
-          <p className="">Yours, Jonak</p>
+          <p className="">Your Assistant, Jonak</p>
         </div>
       </div>
     </div>
