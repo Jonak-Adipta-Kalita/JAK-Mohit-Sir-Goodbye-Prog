@@ -1,7 +1,16 @@
 import { useState } from "react";
 
 const App = () => {
-  const pictures = ["pic1.jpeg"];
+  const pictures = [
+    "pic1.jpeg",
+    "pic2.jpeg",
+    "pic3.jpeg",
+    "pic4.jpeg",
+    "pic5.jpeg",
+    "pic6.jpeg",
+    "pic7.jpeg",
+    "pic8.jpeg",
+  ];
   const [picture, setPicture] = useState(0);
 
   return (
@@ -18,7 +27,7 @@ const App = () => {
             onClick={() => {
               setPicture(picture - 1);
             }}
-            className="picture-buttons left-[68px]"
+            className="picture-buttons left-8"
           >
             {"<"}
           </button>
@@ -33,7 +42,7 @@ const App = () => {
             onClick={() => {
               setPicture(picture + 1);
             }}
-            className="picture-buttons right-[68px]"
+            className="picture-buttons right-8"
           >
             {">"}
           </button>
