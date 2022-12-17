@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#00a6d8];
+}
+
+@layer components {
+  .text-color {
+    @apply text-white;
+  }
+}
