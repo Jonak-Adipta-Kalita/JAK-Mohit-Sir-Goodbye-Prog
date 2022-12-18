@@ -70,7 +70,7 @@ const App = () => {
             touch and let us know how you are doing.
           </p>
           <p className="">I will miss you the most Sir!</p>
-          <p className="">Your Assistant, Jonak</p>
+          <p className="">Your Assistant, <a href="https://jonakadiptakalita.tk/">Jonak</a></p>
         </div>
       </div>
     </div>
